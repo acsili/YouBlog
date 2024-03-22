@@ -11,5 +11,6 @@ namespace YouBlog.Models
         public string Salt { get; set; }
         public DateTime RegisteredAt { get; set; } = DateTime.Now;
         public string Description { get; set; }
+        public List<Post> Posts { get; set; } = new();
     }
 }
