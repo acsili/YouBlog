@@ -4,7 +4,7 @@ using YouBlog.Models;
 
 namespace YouBlog.DAL.Repository
 {
-    public class UserRepository : IRepository<User>, IDisposable
+    public class UserRepository : IUserRepository, IDisposable
     {
         private ApplicationContext _context;
         public UserRepository(ApplicationContext context) 
